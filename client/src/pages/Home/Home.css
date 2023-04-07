@@ -1,0 +1,142 @@
+.main_container_Home{
+  width: 100%;
+  height: 50vh;
+}
+.HeaderPic{
+  width: 100%;
+  height: 600px;
+}
+.Picture_inside_text{
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: 35%;
+  background-color: rgba(240, 248, 255, 0);
+  color: rgb(0, 0, 0);
+}
+
+/* CSS */
+.btnOfHomePage {
+  background: linear-gradient(to bottom right, #af1733, #d8d6d4);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.btnOfHomePage:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.btnOfHomePage:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.outMissionSection{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.outMissionFirstSection{
+  padding-top: 70px;
+  margin-left: 40px;
+  padding-left: 50px;
+  width: 50%;
+  height: 40vh;
+  text-align: start;
+}
+
+p{
+  font-weight: 700;
+  color: gray;
+}
+
+.outMissionSecondSection{
+  width: 50%;
+  height: 40vh;
+}
+
+.pictureOurMission{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media only screen and (max-width: 768px) {
+  .HeaderPic {
+    width: 100%;
+    height: 400px;
+  }
+  .Picture_inside_text {
+    top: 20%;
+    left: 25%;
+  }
+  .outMissionSection {
+    flex-direction: column;
+  }
+  .outMissionFirstSection {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+  }
+  .outMissionSecondSection {
+    width: 100%;
+    height: auto;
+  }
+  .pictureOurMission {
+    margin-left: 80px;
+    height: auto;
+    max-width: 60%;
+  }
+}
+.OurBestSellerUpperText{
+  display: flex;
+  justify-content: center;
+}
+.whyChooseUsUpperTExt{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: cursive;
+
+}
+/* For screens with a maximum width of 576px */
+@media only screen and (max-width: 576px) {
+  
+.whyChooseUsUpperTExt{
+  justify-content: center;
+}
+  .HeaderPic {
+    height: 400px;
+    width: 100%;
+  }
+  .Picture_inside_text {
+    top: 15%;
+    left: 20%;
+  }
+  .outMissionFirstSection {
+    padding-top: 50px;
+    font-size: 14px;
+  }
+  .pictureOurMission {
+    height: 100%;
+    object-fit: cover;
+  }
+}

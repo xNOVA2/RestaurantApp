@@ -1,0 +1,62 @@
+a{
+  text-decoration: none;
+  color: red;
+}
+.accordian {
+    width: 95%;
+    
+    height: 20em;
+    overflow: hidden;
+    margin: 10em auto;
+  }
+  
+  .accordian ul {
+    width: 100%;
+  }
+  
+  .accordian li {
+    position: relative;
+    display: block;
+    width: calc(100%/10);
+    overflow: hidden;
+    float: left;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+  }
+  
+
+  .accordian ul:hover li {
+    width: calc(20%/9);
+  }
+  
+  .accordian ul li:hover {
+    width: 80%;
+  }
+  
+
+  .accordian li img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 320px;
+  }
+  
+  .image-title {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+  }
+  
+  .image-title a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5em;
+    font-size: 1em;
+  }
